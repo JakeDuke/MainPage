@@ -9,6 +9,7 @@ nav {
 }
 .w3-container {
   max-width: 1541px;
+  min-width: 1001;
   margin: auto;
 }
 .nav-item {
@@ -118,9 +119,16 @@ input {
 }
 .logo-wrap {
   max-height: 356px;
+  display: grid;
+  overflow: hidden;
+  min-width: 600px;
 }
 .bg {
   background-image: url("./assets/TOP MENU - LOGO/bg.png");
+  min-width: 600px;
+  min-height: 356px;
+  display: grid;
+  overflow: hidden;
 }
 .center {
   display: block;
@@ -133,35 +141,35 @@ input {
   min-height: 255px;
 }
 .centered {
-  min-width: 500px;
-  min-height: 225px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -125%);
+  display: block;
+  max-width: 500px;
+  max-height: 225px;
+  position: relative;
+  left: 34%;
+  top: -24%;
   z-index: 1;
 }
 .aut {
   width: 156px;
   height: 224px;
-  position: absolute;
-  top: 22%;
-  left: 25%;
+  position: relative;
+  bottom: 54%;
+  left: 18%;
 }
 .aut-right {
   width: 156px;
   height: 224px;
-  position: absolute;
-  top: 22%;
-  right: 25%;
+  position: relative;
+  bottom: 74%;
+  left: 72%;
 }
 .spin {
-  width: 302px;
-  height: 124px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -195%);
+  display: block;
+  max-width: 302px;
+  max-height: 124px;
+  position: relative;
+  bottom: 40%;
+  margin-left: 41%;
   z-index: 1;
 }
 .bottom-menu {
@@ -237,12 +245,13 @@ input {
   letter-spacing: -1.15px;
 }
 .games {
+  min-width: 1200px;
   background-color: #000;
   margin: auto;
 }
 .games-wrap {
-  margin: auto;
-  padding-left: 8rem;
+  display: grid;
+  min-width: 800px;
 }
 .row {
   max-width: 590px;
@@ -285,11 +294,10 @@ input {
   text-transform: uppercase;
 }
 .prom {
-  position: absolute;
   max-width: 400px;
   max-height: 308px;
   float: right;
-  transform: translate(187%, -104%);
+  margin: -9rem 20rem 0 70rem;
 }
 footer {
   text-align: center;
